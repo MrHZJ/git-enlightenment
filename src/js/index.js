@@ -11,6 +11,6 @@
 	for (var i =  subcoms.length - 1; i >= 0; i--) {
 		var item = subcoms[i];
 		
-		item.innerHTML = '- ' + item.innerHTML;
+		item.innerHTML = '-  ' + item.innerHTML;
 	}
 })(window)
