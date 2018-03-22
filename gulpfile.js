@@ -83,12 +83,12 @@ gulp.task('serve', function() {
         }
     });
 
-   gulp.watch("src/index.html",["copy"]);//拷贝html 
+   // gulp.watch("src/index.html",["copy"]);//拷贝html 
    gulp.watch("src/less/*.less",["less"]); //less --> css --->压缩-->自动全部
-   gulp.watch(['src/css/*.css','!src/css/_*.css'],["cssCopy"]); //less --> css --->压缩-->自动全部
+   gulp.watch('src/css/*.css',["cssCopy"]); //sr/css-->dist/css 
 
    //gulp.watch("src/js/*.js",["script"]); //压缩合并js,有时候可能不用合并，看情况script任务与jsconcat任务取其中一个即可
-   gulp.watch("src/js/*.js",["jsmin"]); //压缩合并js,有时候可能不用合并，看情况
+   // gulp.watch("src/js/*.js",["jsmin"]); //压缩合并js,有时候可能不用合并，看情况
 });
 
 

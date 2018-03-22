@@ -1,22 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>git入门</title>
 	<meta charset="utf-8"> 
-	<link href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<style>
-		h1 {
-			text-align:center;
-		}
+		
 	</style>
 </head>
 <body>
-	<h1>git入门</h1>
-	<h2>git是什么</h2>
+	<div id="content">
+		<h1>git入门</h1>
+	<h2>git什么</h2>
 	<p class="comment">要想使用一个工具，显然要了解它是什么？</p>
-	<p class="comment">git是什么?git是源代码管理工具。简单地来说就是帮你管理你的代码。就像定期借钱一样，它会把借多少钱，借钱缘由，是否归还等等相关事宜都记录清楚。当然，你也可以拿回一部分。
-	<h2>为什么要学习git</h2>
-	对于一个项目来说，版本的更迭与管理会是一件繁琐的事情，而git能够提供一个很好的仓库给你！这还只是其中一点。还有重要的一点就是团队协作开发，使用git工具，能够让不同地区的人，不同时区的人有机会一起搭建项目，一起完成项目的开发，这也是它为什么那么受欢迎的地方之一了。同样，企业上的项目开发管理也是用git进行管理，所以，很有必要学习一下</p>
+	<div class="comment">git是什么?
+		<div class="subcom">git是源代码管理工具。简单地来说就是帮你管理你的代码。</div>
+		<div class="subcom">简单地来说就是帮你管理你的代码。就像定期借钱一样，它会把借多少钱，借钱缘由，是否归还等等相关事宜都记录清楚。当然，你也可以拿回一部分。</div>
+	</div>
 
+	<h2>为什么要学习git</h2>
+	<p class="comment">
+		
+		对于一个项目来说，版本的更迭与管理会是一件繁琐的事情，而git能够提供一个很好的仓库给你！这还只是其中一点。</p>
+	<p class="comment">	还有重要的一点就是团队协作开发，使用git工具，能够让不同地区的人，不同时区的人有机会一起搭建项目，一起完成项目的开发，这也是它为什么那么受欢迎的地方之一了。</p>
+	<p class="comment">同样，企业上的项目开发管理也是用git进行管理，所以，很有必要学习一下
+	</p>
+
+	<h2>使用git</h2>
+	<p class="comment">站在岸上学不会游泳，所以，要想熟练掌握一个工具，那必须得拿到工具。官网 https://git-scm.com/download/win</p>
+	<div class="comment">在github网上注册一个账号，把它想象成一个大仓库，而且是免费的，听上去多么诱人。我们的项目都将会使用github托管。
+		<div class="subcom">点击github页面上的new repository按钮，然后输入文件名。create repository</div>
+		<div class="subcom">È»ºó»áÌøµ½Ò»¸öÒ³Ãæ£¬Ëü»á¸æËßÄãÒ»Ð©ÃüÁîÐÐ£¬Ò²ÊÇÎÒÃÇ¼´½«ÒªÑ§Ï°µÄ¼¸¸ö³£ÓÃµÄÃüÁîÐÐ£¬±ð¼±£¬¸ú×ÅÎÒµÄ²½Öè×ß</div>
+	</div>
+		
+	<h2>git命令</h2>
+	<p class="comment">×¢Òâ£ºÃüÁîÐÐ±ØÐëÔÚÏîÄ¿µÄ¸ùÄ¿Â¼ÀïÃæÖ´ÐÐ</p>
+	<div class="comment">git init
+			<p class="subcom">¸ùÄ¿Â¼»áÔö¼Ó.gitÎÄ¼þ¼Ð</p>
+			<p class="subcom">ÃüÁîÐÐµÄ×îÄ©¶Ë»áÌí¼Ó£¨master£©×ÖÑù£¬Ä¬ÈÏÌí¼Óµ½masterÖ÷·ÖÖ§</p>
+			<p class="subcom">Õâ¾äÃüÁîÐÐÏàµ±ÓÚ½¨Á¢Ò»¸ö±¾µØ²Ö¿â</p>
+			</div>
+
+	<div class="comment">git add README.md
+			<p class="subcom">git add ÃüÁîÐÐ°ÑÓÐ¸Ä¶¯µÄÎÄ¼þÌí¼Óµ½±¾µØ²Ö¿âÀï</p>
+			<p class="subcom">Õâ¾äÃüÁîÐÐÏàµ±ÓÚ°ÑÓÐ±ä»¯µÄÎïÆ·´æÔÚ²Ö¿â</p>
+			</div>
+	<div class="comment">git commit -m "comment"
+			<p class="subcom">Õû¾äÃüÁîÐÐÒâË¼ÊÇÌá½»ÈÕÖ¾Ð´Ê²Ã´</p>
+			<p class="subcom">commit Ìá½»µÄÒâË¼£¬-mÖ¸µÄÊÇmessage,commentÈÕÖ¾ÆÀÂÛ¡£</p>
+			<p class="subcom">ÕâÊÇ¼ÇÂ¼ÈÕÖ¾£¬¾ÍÏàµ±ÓÚ°Ñ²Ö¿âµÄÎïÆ·Âô¸ø±ðÈËÊÇÎªÁËÊ²Ã´£¬²Ö¿âÓÐÊ²Ã´±ä»¯µÈµÈ</p>
+			</div>
+	<div class="comment">git remote add origin URL
+			<p class="subcom">remoteÔ¶³Ì£¬ÒâË¼ÊÇÔÚgithub²Ö¿â</p>
+			<p class="subcom">add origin URL;Ìí¼ÓÆðÔ´,°ÑURLµØÖ·ÉèÖÃÎªÖ÷Á÷·ÖÖ§Æðµã</p>
+			<p class="subcom">ÕâÒ»¾äÃüÁîÐÐÏàµ±ÓÚÔÚ½¨Á¢Ò»¸ö×Ü²Ö¿â</p>
+			</div>
+
+	<div class="comment">git push -u origin master
+			<p class="subcom">push£¬ÍÆ¡£°ÑµÇ¼ÇºÃµÄ¡¢²Ö¿âÀïÓÐ±ä»¯µÄ¶«Î÷ÍÆµ½×Ü²Ö¿â</p>
+			</div>
+
+			<div class="comment">git status
+			<p class="subcom">status×´Ì¬¡£ÏÔÊ¾ÓÐ±ä»¯µÄÎÄ¼þ</p>
+			</div>
+
+			<div class="comment">git log
+			<p class="subcom">log,ÈÕÖ¾¡£´òÓ¡ÈÕÖ¾£¬¸ù¾ÝÈÕÖ¾²é¿´ÀúÊ·¼ÇÂ¼</p>
+			</div>
+
+			<div class="comment">git diff
+			<p class="subcom">difference,ÏÔÊ¾´Ë´ÎÓëÉÏ°æ±¾µÄÇø±ð</p>
+			</div>
+
+			<h2>ÈçºÎÊ¹ÓÃgithubÍÐ¹ÜÒ³Ãæ£¬Ê¹ÓÃÃâ·ÑÓòÃû</h2>
+			<div class="comment">½¨Á¢ÃûÎª¡°gh-pages¡±µÄ·ÖÖ§£¨Ãû×ÖÊÇ¹Ì¶¨µÄ£©</div>
+			<div class="comment">git brance gh-pages £»½¨Á¢gh-pages·ÖÖ§</div>
+			<div class="comment">git checkout gh-pages;ÇÐ»»µ±Ç°·ÖÖ§Îªgh-pages, </div>
+			<div class="comment">git push -u origin gh-pages; 
+			<p class="subcom">difference,ÏÔÊ¾´Ë´ÎÓëÉÏ°æ±¾µÄÇø±ð</p>
+			</div>
+</div>
+		
+<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

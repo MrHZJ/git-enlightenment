@@ -1,0 +1,1 @@
+!function(o){var e=window.document.querySelectorAll("comment");console.log(e)}();

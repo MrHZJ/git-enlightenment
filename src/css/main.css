@@ -1,1 +1,1 @@
-h1{text-align:center}h2{text-align:left}p.comment{background:#ccc;color:#eee;text-indent:2em}
+#content{width:60%;margin:10px auto}#content h1{text-align:center}#content h2{text-align:left}#content .comment,#content .subcom{padding:10px 20px;background:#f5f5f5;color:#333;text-indent:2em;line-height:36px;border-radius:15px}#content .subcom{text-indent:4em;margin:0}
