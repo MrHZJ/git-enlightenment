@@ -1,1 +1,1 @@
-!function(o){var e=window.document.querySelectorAll("comment");console.log(e)}();
+!function(n){for(var e=n.document.querySelectorAll(".comment"),r=e.length-1;0<=r;r--){(l=e[r]).innerHTML="+ "+l.innerHTML}var o=n.document.querySelectorAll(".subcom");for(r=o.length-1;0<=r;r--){var l;(l=o[r]).innerHTML="- "+l.innerHTML}}(window);
